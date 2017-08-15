@@ -8,7 +8,7 @@
 			$this->host = 'localhost';
 			$this->user = 'root';
 			$this->pass = 'passwd';
-			$this->name = 'test_base';
+			$this->base = 'test_base';
 			$this->char = 'utf8';
 		}
 
