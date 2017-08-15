@@ -27,6 +27,11 @@
 			$this->db = new \PDO($dsn, $this->user, $this->pass);
 		}
 
+		public function disconnect()
+		{
+			unset($this->db);
+		}
+
 		public function getQuery(string $request,
 								 array  $params = array(),
 								 string $requestType)
