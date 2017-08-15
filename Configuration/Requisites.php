@@ -1,5 +1,5 @@
 <?php
-	namespace NSPACE\Configuration
+	namespace NSPACE\Configuration;
 
 	class Requisites
 	{
