@@ -7,7 +7,7 @@
 		{
 			$this->host = 'localhost',
 			$this->user = 'root',
-			$this->pass = '',
+			$this->pass = 'pass',
 			$this->name = 'test_base',
 			$this->char = 'utf8';
 		}
