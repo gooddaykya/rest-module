@@ -1,14 +1,14 @@
 <?php
-	namespace REST/Configuration
+	namespace REST\Configuration;
 
 	class Requisites
 	{
 		public function __construct()
 		{
-			$this->host = 'localhost',
-			$this->user = 'root',
-			$this->pass = 'passwd',
-			$this->name = 'test_base',
+			$this->host = 'localhost';
+			$this->user = 'root';
+			$this->pass = 'passwd';
+			$this->base = 'test_base';
 			$this->char = 'utf8';
 		}
 
