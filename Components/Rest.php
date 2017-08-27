@@ -1,7 +1,7 @@
 <?php
 	namespace REST\Components;
 
-	abstract class Rest implements \REST\Interfaces\RESTAdaper
+	abstract class Rest implements \REST\Interfaces\RESTAdapter
 	{
 		protected $model;
 		protected $conf;
