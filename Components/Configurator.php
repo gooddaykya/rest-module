@@ -14,7 +14,7 @@
 
 		public function __call($prop, $params = null)
 		{
-			if (property_exists($this->{$prop}))
+			if (property_exists($this, $this->{$prop}))
 				return $this->{$prop};
 			else
 				throw new \Exception('Configurator :  unknown property' . PHP_EOL);
