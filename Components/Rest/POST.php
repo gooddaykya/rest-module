@@ -5,7 +5,7 @@
 	{
 		public function execute()
 		{
-			if (is_empty($this->conf->body()))
+			if (empty($this->conf->body()))
 				throw new \Exception('POST :  no body specified' . PHP_EOL);
 			else
 				$this->result = $this->model->post($this->conf->body());
