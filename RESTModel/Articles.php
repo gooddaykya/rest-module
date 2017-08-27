@@ -9,7 +9,7 @@
 
 		public function get(int $id = null)
 		{
-			if (is_null($id))
+			if (!is_null($id))
 				return "Article number $id";
 			return "All articles";
 		}
