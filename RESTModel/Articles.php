@@ -14,7 +14,7 @@
 			return "All articles";
 		}
 
-		public function put(int $id = null, array $params)
+		public function put(int $id = null, array $params = null)
 		{
 			if (is_null($id)) {
 				return $this->post($params);
@@ -23,9 +23,12 @@
 			}
 		}
 
-		public function post(array $params)
+		public function post(array $params = null)
 		{
-			return 'posting new article with params: ' . implode(', ', $params);
+			if (is_null($params))
+				throw new \Exception('RESTModel :  no params specified' . PHP_EOL);
+			else
+				return 'posting new article with params: ' . implode(', ', $params);
 		}
 
 		public function del(int $id = null)
