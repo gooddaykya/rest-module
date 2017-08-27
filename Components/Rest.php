@@ -7,7 +7,7 @@
 		protected $conf;
 		protected $result;
 
-		public function __construct(\REST\Interfaces\RESTModel $model,
+		public function __construct(\REST\Interfaces\RESTModelAdapter $model,
 									\REST\Components\Configurator $conf)
 		{
 			$this->model = $model;
