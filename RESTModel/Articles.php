@@ -14,10 +14,10 @@
 			return "All articles";
 		}
 
-		public function put(int $id, array $params)
+		public function put(int $id = null, array $params)
 		{
 			if (is_null($id)) {
-				throw new \Exception('Model :  no id specified for put' . PHP_EOL);
+				return $this->post($params);
 			} else {
 				return "putting into $id next params: " . implode(', ', $params);
 			}
