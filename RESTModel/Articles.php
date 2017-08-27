@@ -28,7 +28,7 @@
 			return 'posting new article with params: ' . implode(', ', $params);
 		}
 
-		public function del(int $id)
+		public function del(int $id = null)
 		{
 			if (is_null($id))
 				return "removing article number $id";
