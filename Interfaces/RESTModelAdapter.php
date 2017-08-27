@@ -3,8 +3,8 @@
 
 	interface RESTModelAdapter
 	{
-		public function get();
-		public function put();
-		public function post();
-		public function del();
+		public function get(int $id = null);
+		public function put(int $id, array $params);
+		public function post(array $params);
+		public function del(int $id = null);
 	}
