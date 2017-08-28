@@ -1,6 +1,6 @@
 <?php
 	namespace REST\Components;
-	use namespace \REST\Components\Rest as Rest;
+	use \REST\Components\Rest;
 
 	class RestFactory
 	{
