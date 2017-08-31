@@ -16,7 +16,7 @@
 
 		public function getResponse()
 		{
-			return $this->result;
+			return json_encode($this->result);
 		}
 		
 		public abstract function execute();
