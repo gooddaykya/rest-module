@@ -14,9 +14,17 @@
 
 		public function execute()
 		{
+			try {
+				
 			if (empty($this->body))
-				throw new \Exception('POST :  no body specified' . PHP_EOL);
+				throw new \Exception('POST :  expected body' . PHP_EOL);
 			else
 				$this->result = $this->resource->post($this->body);
+
+			} catch (\Exception $e) {
+
+				throw $e;
+
+			}
 		}
 	}

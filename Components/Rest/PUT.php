@@ -18,7 +18,10 @@
 		{
 			try {
 
-				$this->result = $this->resource->put($this->id, $this->body);
+				if (is_null($this->body))
+					throw new \Exception('PUT :  expected body' . PHP_EOL);
+				else
+					$this->result = $this->resource->put($this->id, $this->body);
 
 			} catch (\Exception $e) {
 
