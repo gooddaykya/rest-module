@@ -8,7 +8,6 @@
 									  int $id = null,
 									  array $body = null)
 		{
-			$conf = new \REST\Components\Configurator($id, $body);
 			$rest = null;
 
 			$method = $_SERVER['REQUEST_METHOD'];
@@ -16,19 +15,19 @@
 			switch ($method)
 			{
 				case 'GET':
-					$rest = new Rest\GET($model, $conf);
+					$rest = new Rest\GET($model, $id);
 					break;
 
 				case 'PUT':
-					$rest = new Rest\PUT($model, $conf);
+					$rest = new Rest\PUT($model, $id, $body);
 					break;
 
 				case 'POST':
-					$rest = new Rest\POST($model, $conf);
+					$rest = new Rest\POST($model, $body);
 					break;
 
 				case 'DELETE':
-					$rest = new Rest\DELETE($model, $conf);
+					$rest = new Rest\DELETE($model, $id);
 					break;
 
 				default:
